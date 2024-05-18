@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>QR Code Generator</title>
 </head>
-<body>
+<body class="light-theme">
     <h1>QR Code Generator</h1>
     <div id="generator">
-      <label for="input">Enter the text or URL:</label>
-      <input type="text" id="input" placeholder="Type here...">
-      <button id="generate">Generate</button>
-      <div id="qrcode"></div>
+        <label for="input">Enter the text or URL:</label>
+        <input type="text" id="input" placeholder="Type here...">
+        <button id="generate">Generate</button>
+        <div id="qrcode" style="display: none;"></div>
+        <button id="theme-toggle">Switch to Dark Theme</button>
     </div>
 
-    <script src="qrcode.min.js"></script>
-    <!-- <script src="https://github.com/davidshimjs/qrcodejs/blob/master/qrcode.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
     <script src="JavaScript/script.js"></script>
-  </body>
+</body>
 </html>
